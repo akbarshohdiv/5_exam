@@ -1,0 +1,37 @@
+@use "../global.scss";
+
+.ct__section {
+  padding-top: 164px;
+}
+
+.ct__section--input {
+  width: 100%;
+  height: 60px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #232536;
+  padding-left: 20px;
+  margin-top: 60px;
+}
+
+.all__title {
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #232536;
+  margin-top: 54px;
+}
+
+.all__line {
+  width: 100%;
+  border: 1px solid #6d6e76;
+  margin-top: 32px;
+}
+
+.loader-container {
+  margin-top: 64px;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finsweet</title>
+    <link rel="stylesheet" href="css/compressed/home.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+        <link
+      href="https://assets.website-files.com/61819aaca0e7acc94c5a2d47/6364e7d3dc73e0c1cc6179d6_Finsweet-logo-256.webp"
+      rel="apple-touch-icon"
+    />
+    <link
+      href="https://assets.website-files.com/61819aaca0e7acc94c5a2d47/624607fc89346558929be22f_fs-favicon.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <button id="backtop" style="opacity: 1">
+      <a href="#">Up</a>
+    </button>
+    <nav id="navbar" class="navbarshrink">
+      <div class="container navcontainer">
+        <div class="navlogo">
+          <img src="./images/Logo.png" alt="" />
+        </div>
+        <div class="hamburger">
+          <i class="uil uil-bars" onclick="openNavbar()"></i>
+        </div>
+        <div class="navlinks">
+          <a href="./home.html">Home</a>
+          <a href="./blog-post.html">Blog</a>
+          <a href="./about-us.html">About us</a>
+          <a href="./index.html">Register</a>
+
+          <button class="navbutton"><a href="./login.html">Login</a></button>
+        </div>
+        <div id="navbar-responsive">
+          <i
+            id="navbar-close"
+            class="uil uil-multiply"
+            onclick="closeNavbar()"
+          ></i>
+          <div class="hamcontent">
+            <a href="./home.html">Home</a>
+            <a href="./blog-post.html">Blog</a>
+            <a href="./about-us.html">About us</a>
+            <a href="./index.html">Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <section class="headercontent">
+          <h2>Posted on <span>startup</span></h2>
+          <h1>Step-by-step guide to choosing great font pairs</h1>
+          <p>By <span>James West</span> | May 23, 2022</p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident.
+          </p>
+          <button id="all_post_chek">
+            <a href="./all-post.html"> Read More <i class="uil uil-angle-right-b"></i></a>
+          </button>
+        </section>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="section">
+          <h2 class="section__title">Popular blogs</h2>
+          <div class="loader-container">
+            <div class="loader"></div>
+          </div>
+          <div class="row gap-4" id="homeRow"></div>
+          <hr class="section__hr" />
+        </div>
+
+        <section class="home-category">
+          <h1>Choose A Catagory</h1>
+          <div class="home-categories" id="btn-category-chekked">
+            <div class="home-category-card">
+              <img src="./images/home/i1.png" alt="" />
+              <h1>Business</h1>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+            <div class="home-category-card">
+              <img src="./images/home/i2.png" alt="" />
+              <h1>Startup</h1>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+            <div class="home-category-card">
+              <img src="./images/home/i3.png" alt="" />
+              <h1>Economy</h1>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+            <div class="home-category-card">
+              <img src="./images/home/i4.png" alt="" />
+              <h1>Technology</h1>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p>Finstreet 118 2561 Fintown</p>
+            <p>Hello@finsweet.com 020 7993 2905</p>
+          </div>
+          <div class="footer-bottom-right">
+            <a href="https://www.facebook.com/"
+              ><img src="./images/facebook.png" alt=""
+            /></a>
+            <a href="https://www.twitter.com/"
+              ><img src="./images/twitter.png" alt=""
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img src="./images/instagram.png" alt=""
+            /></a>
+            <a href="https://www.linkedin.com/"
+              ><img src="./images/linkedin.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/dark-light.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+@use "../global.scss";
+
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.blog_section {
+  .foto-sec {
+    max-width: 100%;
+    margin-top: 156px;
+  }
+
+  .banner {
+    max-width: 800px;
+    padding: 63px 0;
+    flex-wrap: wrap;
+    margin: auto;
+
+
+    .foto-andrey {
+      display: flex;
+      align-items: center;
+
+      .foto {
+        width: 53px;
+        height: 53px;
+        flex-shrink: 0;
+      }
+
+      .foto-text {
+        margin-left: 17px;
+
+        h4 {
+          color: var(--purple, #592ea9);
+          font-family: Sen;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 40px;
+          letter-spacing: -1px;
+          opacity: 0.8700000047683716;
+        }
+
+        h5 {
+          color: var(--medium-grey, #6D6E76);
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+        }
+      }
+    }
+
+    h2 {
+      color: var(--black, #232536);
+      font-family: Sen;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 64px;
+      letter-spacing: -2px;
+      margin-top: 24px;
+    }
+
+    p {
+      color: var(--black, #232536);
+      font-family: Sen;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      margin-top: 34px;
+    }
+  }
+
+  .info {
+    max-width: 700px;
+    padding: 64px 0;
+    flex-wrap: wrap;
+    margin: auto;
+
+    .info-1 {
+      color: var(--medium-grey, #6D6E76);
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+    }
+
+    .info-2 {
+      margin-top: 24px;
+    }
+  }
+}
+
+// .foto {
+//   padding: 0 16px 0 0;
+// }
+
+// .foto-andrey {
+//   max-width: 250px;
+//   display: flex;
+//   align-items: center;
+// }
+
+// .foto-andrey h4 {
+//   max-width: 100px;
+//   color: #592EA9;
+//   line-height: 28px;
+// }
+
+// .foto-andrey p {
+//   color: #6D6E76;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 28px;
+// }
+
+// .start {
+//   position: absolute;
+//   display: flex;
+//   align-items: center;
+//   height: 80px;
+//   margin: auto;
+// }
+
+// .banner h2 {
+//   max-width: 708px;
+//   height: 128px;
+//   font-weight: 700;
+//   font-size: 48px;
+//   line-height: 64px;
+//   letter-spacing: -2px;
+//   font-family: sans-serif;
+//   padding: 24px 0;
+// }
+
+// .start p {
+//   font-family: sans-serif;
+//   font-weight: 700;
+//   font-size: 24px;
+//   line-height: 32px;
+//   padding: 34px 0;
+// }
+
+// .banner {
+//   position: absolute;
+//   max-width: 100%;
+//   margin-left: 100px;
+//   margin-top: 250px;
+// }
+
+// .foto-woman {
+//   width: 100%;
+//   padding: 0 80px;
+//   margin-top: 554px;
+// }
+
+// .info {
+//   max-width: 700px;
+//   padding: 64px 0;
+//   flex-wrap: wrap;
+//   margin: auto;
+// }
+
+// .info h3 {
+//   max-width: 799px;
+//   height: 96px;
+//   font-family: sans-serif;
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 48px;
+//   letter-spacing: -2px;
+//   color: #232536;
+// }

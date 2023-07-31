@@ -1,0 +1,67 @@
+@use "../global.scss";
+
+
+.login-box {
+  .login-title {
+    margin-top: 148px;
+    margin-left: 408px;
+    width: 557px;
+    height: 64px;
+    color: #232536;
+    text-align: center;
+
+    h2 {
+      /* Heading H1 */
+      font-family: Sen;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 64px;
+      /* 133.333% */
+      letter-spacing: -2px;
+    }
+  }
+
+  form {
+    margin-top: 76px;
+    margin-left: 336px;
+
+    .user-box {
+      margin-top: 10px;
+
+      input {
+
+        display: flex;
+        width: 768px;
+        padding: 24px;
+        align-items: center;
+
+        border-radius: 2px;
+        border: 1px solid rgba(59, 66, 117, 0.5);
+
+      }
+
+    }
+
+    #btn {
+      margin-top: 54px;
+      width: 768px;
+      height: 64px;
+      flex-shrink: 0;
+      border: none;
+      background: #FFD050;
+      color: #232536;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #68db20;
+      }
+
+
+    }
+  }
+}

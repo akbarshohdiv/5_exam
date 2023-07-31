@@ -1,0 +1,141 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/dark-light" as *;
+
+
+
+// .navbarshrink {
+//   padding: 10px 0px;
+//   box-shadow: 1px 5px 15px $black;
+// }
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 25px 0;
+  background-color: $black;
+
+
+
+  .navcontainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+
+    .hamburger {
+      .uil-bars {
+        cursor: pointer;
+        color: $white;
+        font-size: 35px;
+      }
+    }
+
+    .navlinks {
+
+
+      a {
+        margin: auto 12px;
+        font-family: $inter;
+        color: $white;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        text-decoration: none;
+
+
+      }
+      
+
+      .navbutton {
+        margin-left: 20px;
+        transform: scale(1);
+        background-color: $white;
+        color: $black;
+        font-family: $sen;
+        border: none;
+        padding: 16px 48px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+
+        &:hover {
+          background-color: $buttonhover ;
+          text-decoration: none;
+
+        }
+
+        a {
+          color: var(--black, #232536);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          text-decoration: none;
+        }
+
+      }
+    }
+
+    #navbar-responsive {
+      transition: $tran;
+      display: block;
+      position: fixed;
+      top: -100%;
+      left: 0;
+      bottom: 0;
+      height: 300px;
+      width: 100%;
+      text-align: center;
+      background-color: #232536e4;
+
+      .uil-multiply {
+        cursor: pointer;
+        padding: 25px 30px;
+        color: $white;
+        font-size: 35px;
+        position: absolute;
+        right: 0px;
+      }
+
+      .hamcontent {
+        padding: 25px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        a {
+          margin: 10px;
+          font-family: $inter;
+          color: $white;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media(min-width:800px) {
+  .navbutton {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  #navbar-responsive {
+    display: none;
+  }
+
+  .navlinks {
+    display: flex;
+  }
+}
